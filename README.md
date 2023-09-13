@@ -38,11 +38,13 @@ Para el desarrolló de utilizaron preprocesadores como SASS para estilizar compo
 Estado Global:
 Para administrar el estado global de la aplicación, se implementó un hoock para la gestión de estados. Esto permite compartir datos entre componentes sin necesidad de pasar propiedades manualmente.
 Finalmente, la aplicación dió como resultado la siguiente imagenes para cada una de las pantallas:
-PARA TABLES
+### PARA TABLES
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/aba1c332-b359-4d86-892a-bf4f528c16d6)
-PARA MOVIL
+
+### PARA MOVIL
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/0f7974e0-33e6-4811-8374-6db0cb3d42e6)
-PARA DESKTOP
+
+### PARA DESKTOP
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/4020516a-be5f-435d-a137-52db5a396fae)
 
 También ,se implementó un archivo en Docker y se ejecutó Docker compose para que la aplicación fuse portable para  simplificar el desarrollo, el despliegue y la administración de aplicaciones en entornos de producción. 
