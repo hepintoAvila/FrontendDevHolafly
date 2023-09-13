@@ -27,4 +27,30 @@ Seguidamente se conectó la aplicación React a la API mediante Axios y Express 
 3.	Conexión y Configuración: Nos aseguramos de que la aplicación se esté ejecutando en un puerto diferente al del servidor Express. De manera predeterminada, Axios realizará solicitudes al mismo dominio y puerto en el que se está ejecutando la aplicación React.
 4.	Manejo de CORS (Cross-Origin Resource Sharing): Se tuvo muy en cuenta la configurar CORS en el servidor Express para permitir las solicitudes desde el dominio de tu aplicación React. Para ello se instaló, mediante “npm install cors”.
 
+El FrontEnd fu desarrollado en React para ello utilizamos la biblioteca de JavaScript llamada React. A continuación, les doy una breve explicación de cómo la aplicación y sus componentes fueron desarrollados:
+1. Componentes Implementados:
+Se tuvo en cuenta que los componentes fuese parte del principio de construcción reutilizables para una mejor interfaz de usuario.  Algunos, componentes pueden ser simples, como un botón o un encabezado, o más complejos, como una lista de elementos, la estructura del componerte principal quedo de esta manera:
+![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/e4febdf0-dcc6-45d3-8417-654c114487e8)
+Estilos:
+Para el desarrolló de utilizaron preprocesadores como SASS para estilizar componentes.
+Estilos:
+Para el desarrolló de utilizaron preprocesadores como SASS para estilizar componentes.
+Estado Global:
+Para administrar el estado global de la aplicación, se implementó un hoock para la gestión de estados. Esto permite compartir datos entre componentes sin necesidad de pasar propiedades manualmente.
+Finalmente, la aplicación dió como resultado la siguiente imagenes para cada una de las pantallas:
+PARA TABLES
+![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/aba1c332-b359-4d86-892a-bf4f528c16d6)
+PARA MOVIL
+![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/0f7974e0-33e6-4811-8374-6db0cb3d42e6)
+PARA DESKTOP
+![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/4020516a-be5f-435d-a137-52db5a396fae)
+
+También ,se implementó un archivo en Docker y se ejecutó Docker compose para que la aplicación fuse portable para  simplificar el desarrollo, el despliegue y la administración de aplicaciones en entornos de producción. 
+
+Finalmente, se realizaron pruebas Unitarias para verificar la implementacón. 
+
+
+
+
+
 
