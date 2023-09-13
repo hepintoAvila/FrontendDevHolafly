@@ -1,0 +1,225 @@
+//
+// general.scss
+//
+
+html {
+    position: relative;
+    min-height: 80%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+// Wrapper 
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+//Content Page
+.content-page {
+    margin-left: $leftbar-width;
+    overflow: hidden;
+    padding: $topbar-height 0px 0px;
+    min-height: 100vh;
+    margin-top: -70px;
+    background: rgb(255, 255, 255);
+}
+
+.topnav {
+    color: #ffffff !important;
+    padding: 0.3em 0.3em;
+    @include font-size(calc(#{$font-size-lg} + .9rem));
+}
+
+.carousel {
+    position: relative;
+    max-height: 80%;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: -0.5rem -0.5rem;
+    border-bottom: 1px solid #ddcc9d;
+    border-top-left-radius: calc(0.2rem - 1px);
+    border-top-right-radius: calc(0.2rem - 1px);
+    padding: 0.3em 1.2em;
+}
+
+h6,
+.h6 {
+    font-size: 1.2rem;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0.03em 2.5em;
+}
+
+.mensaje {
+    color: #242322 !important;
+    @include font-size(calc(#{$font-size-lg} + .9rem));
+    padding: '0 20px';
+}
+
+
+.navbar-dark-slider {
+    background-color: rgba(rgb(59, 59, 58), 0.03);
+}
+
+.imgCat {
+    vertical-align: middle;
+    padding: 0.1em;
+    height: 18em;
+}
+
+.navbar-dark-instragram {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    vertical-align: middle;
+
+    .titulo {
+        text-transform: none !important;
+        @include font-size(calc(#{$font-size-lg} - .5rem));
+        color: rgb(110, 107, 107) !important;
+    }
+
+    .titleurl {
+        text-transform: none !important;
+        @include font-size(calc(#{$font-size-lg} + .9rem));
+        color: rgb(56, 55, 55) !important;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 3 columnas con el mismo ancho */
+    grid-template-rows: repeat(3, 100px);
+    /* 2 filas con una altura fija de 100px */
+    gap: 2px;
+    /* Espacio entre las celdas */
+}
+
+.grid-item {
+    /* Estilos para los elementos de la grid */
+    background-color: #eef1f3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+// Fix event bubbling on iOS devices
+@supports (-webkit-overflow-scrolling: touch) {
+    body {
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    /* Estilos para pantallas pequeñas */
+    .mensaje {
+        font-size: calc(1.25rem);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 8fr);
+        grid-template-rows: repeat(1, 286px);
+        gap: 2px;
+    }
+
+    .imgCat {
+        object-fit: cover;
+        padding: 0.1em;
+        height: 17em;
+        width: 24em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Estilos para pantallas medianas (tablets) */
+    .mensaje {
+        font-size: calc(1.25rem);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 8fr);
+        grid-template-rows: repeat(1, 285px);
+        gap: 3px;
+    }
+
+    .imgCat {
+        object-fit: cover;
+        padding: 0.1em;
+        height: 17em;
+        width: 24em;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Estilos para pantallas grandes (laptops y escritorios) */
+    .mensaje {
+        font-size: calc(1.25rem);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 0fr);
+        grid-template-rows: repeat(1, 445px);
+        gap: 3px;
+    }
+
+    .imgCat {
+        object-fit: cover;
+        padding: 0.1em;
+        height: 28em;
+        width: 33em;
+        object-fit: cover;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    /* Estilos para pantallas extra grandes (monitores de escritorio) */
+    /* Estilos para pantallas grandes (laptops y escritorios) */
+    .mensaje {
+        font-size: calc(1.25rem);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 462px);
+        gap: 10px;
+        align-items: center;
+        margin-left: 5em;
+        margin-top: 5em;
+    }
+
+    .imgCat {
+        object-fit: cover;
+        padding: 1.1em;
+        height: 29em;
+        width: 26em;
+
+    }
+
+    .grid-item {
+        padding: 22px 1em;
+    }
+}

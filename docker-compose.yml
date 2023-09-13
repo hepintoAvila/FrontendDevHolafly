@@ -1,0 +1,20 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./src/server   # Path to the backend directory
+    ports:
+      - '3001:3001'        # Map host port 3001 to container port 3001
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./   # Path to the frontend directory
+    ports:
+      - '3000:3000'         # Map host port 3000 to container port 3000
+    networks:
+      - app-network
+
+networks:
+  app-network:
