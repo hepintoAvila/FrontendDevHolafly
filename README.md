@@ -15,40 +15,39 @@ If you're feeling extra ambitious:
 -   Dockerize the app
 -   Write realistic unit/end-to-end tests to make sure everything is working properly.
 
-Para la implementación se realizaron los siguientes procedimientos:
-Para la REST API se implementó en node 14.21.3, para ello se creo una carpeta SERVER donde van todos los archivos relacionados con el servicio para la ejecución del mismo.
-Esta Simple REST API es una interfaz que sigue los principios del estilo de arquitectura REST y permite que a través de un endpoint la aplicación se comunique entre sí a través de la web mediante solicitudes HTTP para acceder y manipular recursos de datos. Las configuraciones realizadas a esta, proporcionan una forma eficaz y escalable de integrar con otras aplicaciones y servicios en línea.
+For the implementation, the following procedures were carried out: For the REST API it was implemented in node 14.21.3, for this a SERVER folder was created where all the files related to the service go for its execution. This Simple REST API is an interface that follows the principles of the REST architecture style and allows through an endpoint the application to communicate with each other over the web using HTTP requests to access and manipulate data resources. The configurations made to it provide an efficient and scalable way to integrate with other applications and online services.
 
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/0c2c1001-257f-478a-a9f5-f6ed9874c1f8)
 
-Seguidamente se conectó la aplicación React a la API mediante Axios y Express lo que implicó la creación de un servidor Express que actuara como intermediario entre la aplicación cliente desarrollada en React y la API externa o un objeto JSON que hiciera de base de datos. A continuación, se detallan los pasos generales para lograr esto:
-1.	Configurar el Servidor Express: En el servidor Express, se configuró las rutas y los controladores para manejar las solicitudes HTTP entrantes y comunicarse con la API y está la base de datos. Aquí en los archivos podrás apreciar el código implementado para la configurar del servidor Express.
-2.	Solicitudes Axios desde React: En la aplicación que se desarrolló se puede utilizar Axios para realizar solicitudes HTTP al servidor Express.
-3.	Conexión y Configuración: Nos aseguramos de que la aplicación se esté ejecutando en un puerto diferente al del servidor Express. De manera predeterminada, Axios realizará solicitudes al mismo dominio y puerto en el que se está ejecutando la aplicación React.
-4.	Manejo de CORS (Cross-Origin Resource Sharing): Se tuvo muy en cuenta la configurar CORS en el servidor Express para permitir las solicitudes desde el dominio de tu aplicación React. Para ello se instaló, mediante “npm install cors”.
+The React application was then connected to the API through Axios and Express, which involved creating an Express server that acted as an intermediary between the client application developed in React and the external API or a JSON object that acted as a database. Below are the general steps to obtain the following results:
+1.	Configure the Express Server: On the Express server, routes and drivers have been configured to handle incoming HTTP requests and communicate with the API and the database. Here in the files you will be able to see the code implemented to configure the Express server.
+2.	Axios requests from React: In the application that was developed, Axios can be used to make HTTP requests to the Express server.
+3.	Connection and Configuration: We make sure that the application is running on a different port than the Express server. By default, Axios will make requests to the same domain and port that the React application is running on.
+4.	Handling CORS (Cross-Origin Resource Sharing): Careful consideration was given to configuring CORS on the Express server to allow requests from your React application's domain. To do this, it was installed using “npm install cors”.
 
-El FrontEnd fu desarrollado en React para ello utilizamos la biblioteca de JavaScript llamada React. A continuación, les doy una breve explicación de cómo la aplicación y sus componentes fueron desarrollados:
-1. Componentes Implementados:
-Se tuvo en cuenta que los componentes fuese parte del principio de construcción reutilizables para una mejor interfaz de usuario.  Algunos, componentes pueden ser simples, como un botón o un encabezado, o más complejos, como una lista de elementos, la estructura del componerte principal quedo de esta manera:
+The FrontEnd was developed in React, for this we use the JavaScript library called React. Below, I give you a brief explanation of how the application and its components were developed:
+
+1. Implemented Components:
+It was taken into account that the components were part of the reusable construction principle for a better user interface. Some components can be simple, like a button or a header, or more complex, like a list of elements, the structure of the main component looks like this:
+
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/e4febdf0-dcc6-45d3-8417-654c114487e8)
-Estilos:
-Para el desarrolló de utilizaron preprocesadores como SASS para estilizar componentes.
-Estilos:
-Para el desarrolló de utilizaron preprocesadores como SASS para estilizar componentes.
-Estado Global:
-Para administrar el estado global de la aplicación, se implementó un hoock para la gestión de estados. Esto permite compartir datos entre componentes sin necesidad de pasar propiedades manualmente.
-Finalmente, la aplicación dió como resultado la siguiente imagenes para cada una de las pantallas:
-### PARA TABLES
+## Styles:
+For the development, preprocessors such as SASS were used to stylize components.
+## Global Status:
+To manage the global state of the application, a state management hook was implemented. This allows data to be shared between components without the need to manually pass properties.
+Finally, the application resulted in the following images for each of the screens:
+
+### FOR TABLES
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/aba1c332-b359-4d86-892a-bf4f528c16d6)
 
-### PARA MOVIL
+### FOR MOVIL
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/0f7974e0-33e6-4811-8374-6db0cb3d42e6)
 
-### PARA DESKTOP
+### FOR DESKTOP
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/4020516a-be5f-435d-a137-52db5a396fae)
 
-También, se implementó un archivo en Docker y se ejecutó Docker compose para que la aplicación fuse portable para simplificar el desarrollo, el despliegue y la administración de aplicaciones en entornos de producción. 
-Finalmente, se realizaron pruebas Unitarias para verificar la implementación.
+Also, a file was deployed to Docker and Docker compose was run to make the application portable to simplify application development, deployment, and management in production environments.
+Finally, Unit tests were performed to verify the implementation.
 
 
 
