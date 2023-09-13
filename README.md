@@ -47,9 +47,9 @@ Finalmente, la aplicación dió como resultado la siguiente imagenes para cada u
 ### PARA DESKTOP
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/4020516a-be5f-435d-a137-52db5a396fae)
 
-También ,se implementó un archivo en Docker y se ejecutó Docker compose para que la aplicación fuse portable para  simplificar el desarrollo, el despliegue y la administración de aplicaciones en entornos de producción. 
+También, se implementó un archivo en Docker y se ejecutó Docker compose para que la aplicación fuse portable para simplificar el desarrollo, el despliegue y la administración de aplicaciones en entornos de producción. 
+Finalmente, se realizaron pruebas Unitarias para verificar la implementación.
 
-Finalmente, se realizaron pruebas Unitarias para verificar la implementacón. 
 
 
 
