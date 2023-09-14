@@ -40,8 +40,16 @@ It was taken into account that the components were part of the reusable construc
 
 ## Hoock Developed:
 To provide state and a life cycle for developed components.
-![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/f8c7e865-5fc4-40a1-8c82-1c3276c231bd)
 
+import { useKittens, useSlides } from './hoock/';
+  const { kittens,
+    openModal,
+    isopenModal,
+    itemsDetal,
+    loadings,
+    closeModal } = useKittens();
+  const { items } = useSlides();
+  
 ## Styles:
 For the development, preprocessors such as SASS were used to stylize components.
 ## Global Status:
