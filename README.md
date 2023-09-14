@@ -40,7 +40,7 @@ It was taken into account that the components were part of the reusable construc
 
 ## Hoock Developed:
 To provide state and a life cycle for developed components.
-
+```
 import { useKittens, useSlides } from './hoock/';
   const { kittens,
     openModal,
@@ -49,7 +49,7 @@ import { useKittens, useSlides } from './hoock/';
     loadings,
     closeModal } = useKittens();
   const { items } = useSlides();
-  
+ ``` 
 ## Styles:
 For the development, preprocessors such as SASS were used to stylize components.
 ## Global Status:
