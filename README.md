@@ -38,22 +38,10 @@ It was taken into account that the components were part of the reusable construc
 
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/e4febdf0-dcc6-45d3-8417-654c114487e8)
 
-## Hoock Developed:
-To provide state and a life cycle for developed components.
-```
-import { useKittens, useSlides } from './hoock/';
-  const { kittens,
-    openModal,
-    isopenModal,
-    itemsDetal,
-    loadings,
-    closeModal } = useKittens();
-  const { items } = useSlides();
- ``` 
+
 ## Styles:
 For the development, preprocessors such as SASS were used to stylize components.
-## Global Status:
-To manage the global state of the application, a state management hook was implemented. This allows data to be shared between components without the need to manually pass properties.
+without the need to manually pass properties.
 ```
 @media (max-width: 767px) {
 
@@ -76,6 +64,20 @@ To manage the global state of the application, a state management hook was imple
     }
 }
 ```
+## Global Status:
+To manage the global state of the application, a state management hook was implemented. This allows data to be shared between components 
+## Hoock Developed:
+To provide state and a life cycle for developed components.
+```
+import { useKittens, useSlides } from './hoock/';
+  const { kittens,
+    openModal,
+    isopenModal,
+    itemsDetal,
+    loadings,
+    closeModal } = useKittens();
+  const { items } = useSlides();
+ ```
 
 Finally, the application resulted in the following images for each of the screens:
 
