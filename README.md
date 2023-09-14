@@ -16,10 +16,10 @@ If you're feeling extra ambitious:
 -   Write realistic unit/end-to-end tests to make sure everything is working properly.
 
 ######  INDICACIONES  ###
-These are the instructions to run the repo you must have a version of node.js >14 installed on your system.
+These are the instructions to run the repo you must have a version of ~~ node.js >14~~  installed on your system.
 1. Clone this repository.
-2. Install the external libraries using npm install and run the server using npm run start.
-To run the dockerFile run docker-compose up –build to run the Backend and Frontend dockerFile.
+2. Install the external libraries using npm install and run the server using ~~npm run start~~ .
+To run the dockerFile ~~run docker-compose up –build~~  to run the Backend and Frontend dockerFile.
 
 For the implementation, the following procedures were carried out: For the REST API it was implemented in node 14.21.3, for this a SERVER folder was created where all the files related to the service go for its execution. This Simple REST API is an interface that follows the principles of the REST architecture style and allows through an endpoint the application to communicate with each other over the web using HTTP requests to access and manipulate data resources. The configurations made to it provide an efficient and scalable way to integrate with other applications and online services.
 
