@@ -23,7 +23,59 @@ To run the dockerFile run docker-compose up –build to run the Backend and Fron
 
 For the implementation, the following procedures were carried out: For the REST API it was implemented in node 14.21.3, for this a SERVER folder was created where all the files related to the service go for its execution. This Simple REST API is an interface that follows the principles of the REST architecture style and allows through an endpoint the application to communicate with each other over the web using HTTP requests to access and manipulate data resources. The configurations made to it provide an efficient and scalable way to integrate with other applications and online services.
 
-![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/0c2c1001-257f-478a-a9f5-f6ed9874c1f8)
+ 
+```react
+import { useKittens, useSlides } from './hoock/';
+const Footer = React.lazy(() => import('./components/Footer'));
+const Topbar = React.lazy(() => import('./components/Topbar'));
+const Slides = React.lazy(() => import('./components/Slides'));
+const ModalKittens = React.lazy(() => import('./components/ModalKittens'));
+const ListarKittens = React.lazy(() => import('./components/ListarKittens'));
+
+const loading = () => <div className=""></div>;
+const Kittens = () => {
+
+  const { kittens,
+    openModal,
+    isopenModal,
+    itemsDetal,
+    loadings,
+    closeModal } = useKittens();
+  const { items } = useSlides();
+  return (<>
+    <div className="wrapper">
+      <div className="content-page">
+        <div className="content">
+          <Container fluid>
+            <Suspense fallback={loading()}>
+              <Topbar hideLogo={true} />
+            </Suspense>
+            <Suspense fallback={loading()}>
+              <Slides items={items?.body} />
+            </Suspense>
+            <Suspense fallback={loading()}>
+              <ListarKittens items={kittens} openModal={openModal} isopenModal={isopenModal} />
+            </Suspense>
+          </Container>
+        </div>
+        <Suspense fallback={loading()}>
+          <Footer />
+        </Suspense>
+      </div>
+      <Suspense fallback={loading()}>
+        <ModalKittens openModal={openModal}
+          isopenModal={isopenModal}
+          Obj={itemsDetal}
+          kittens={kittens}
+          loadings={loadings}
+          closeModal={closeModal} />
+      </Suspense>
+    </div>
+  </>
+  );
+};
+```
+export default Kittens;
 
 The React application was then connected to the API through Axios and Express, which involved creating an Express server that acted as an intermediary between the client application developed in React and the external API or a JSON object that acted as a database. Below are the general steps to obtain the following results:
 1.	Configure the Express Server: On the Express server, routes and drivers have been configured to handle incoming HTTP requests and communicate with the API and the database. Here in the files you will be able to see the code implemented to configure the Express server.
