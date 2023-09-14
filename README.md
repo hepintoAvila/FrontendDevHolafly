@@ -66,7 +66,7 @@ without the need to manually pass properties.
 ```
 ## Global Status:
 To manage the global state of the application, a state management hook was implemented. This allows data to be shared between components 
-## Hoock Developed:
+<sub> Hoock Developed</sub>
 To provide state and a life cycle for developed components.
 ```
 import { useKittens, useSlides } from './hoock/';
