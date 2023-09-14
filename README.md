@@ -161,7 +161,8 @@ test('renders learn react link', () => {
  ```
 However, they were difficult to execute due to the low capacity of my PC.
 
-REFERENCES
+##REFERENCES##
+
 https://github.com/testing-library/jest-dom
 
 https://web.dev/color-and-contrast-accessibility/?utm_source=devtools
