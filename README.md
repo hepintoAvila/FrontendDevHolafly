@@ -16,7 +16,7 @@ If you're feeling extra ambitious:
 -   Write realistic unit/end-to-end tests to make sure everything is working properly.
 
 ######  INDICACIONES  ###
-These are the instructions to run the repo you must have a version of ~~ node.js >14~~  installed on your system.
+These are the instructions to run the repo you must have a version of `node.js >4.21.3`  installed on your system.
 1. Clone this repository.
 2. Install the external libraries using npm install and run the server using ~~npm run start~~ .
 To run the dockerFile ~~run docker-compose up –build~~  to run the Backend and Frontend dockerFile.
