@@ -74,8 +74,10 @@ const Kittens = () => {
   </>
   );
 };
-```
 export default Kittens;
+```
+Each component was wrapped in a fallback: to obtain an alternative interface to render instead of the real interface if it has not finished loading.
+
 
 The React application was then connected to the API through Axios and Express, which involved creating an Express server that acted as an intermediary between the client application developed in React and the external API or a JSON object that acted as a database. Below are the general steps to obtain the following results:
 1.	Configure the Express Server: On the Express server, routes and drivers have been configured to handle incoming HTTP requests and communicate with the API and the database. Here in the files you will be able to see the code implemented to configure the Express server.
