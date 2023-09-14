@@ -88,8 +88,7 @@ const Kittens = () => {
 };
 export default Kittens;
 ```
-Each component was wrapped in a fallback: to obtain an alternative interface to render instead of the real interface if it has not finished loading.
-
+Each component was wrapped in a fallback: to obtain an alternative interface to render instead of the real interface if it has not finished loading. Call lazy outside of your components to declare a lazy loading component.
 
 ## Styles:
 
@@ -163,6 +162,8 @@ https://docs.docker.com/get-docker/
 https://expressjs.com/en/starter/installing.html
 
 https://responsively.app/
+
+https://es.react.dev/reference/react/lazy#lazy
 
 
 
