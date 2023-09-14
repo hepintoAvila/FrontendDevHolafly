@@ -148,10 +148,21 @@ Finally, the application resulted in the following images for each of the screen
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/4020516a-be5f-435d-a137-52db5a396fae)
 
 Also, a file was deployed to Docker and Docker compose was run to make the application portable to simplify application development, deployment, and management in production environments.
-Finally, Unit tests were performed to verify the implementation.The tests could not be executed due to the low capacity of my PC.
+Finally, Unit tests were performed to verify the implementation.
+ ```
+import { render, screen } from '@testing-library/react';
+import App from './App';
 
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+ ```
+However, they were difficult to execute due to the low capacity of my PC.
 
 REFERENCES
+https://github.com/testing-library/jest-dom
 
 https://web.dev/color-and-contrast-accessibility/?utm_source=devtools
 
