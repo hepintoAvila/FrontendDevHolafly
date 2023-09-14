@@ -37,6 +37,11 @@ The FrontEnd was developed in React, for this we use the JavaScript library call
 It was taken into account that the components were part of the reusable construction principle for a better user interface. Some components can be simple, like a button or a header, or more complex, like a list of elements, the structure of the main component looks like this:
 
 ![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/e4febdf0-dcc6-45d3-8417-654c114487e8)
+
+## Hoock Developed:
+To provide state and a life cycle for developed components.
+![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/f8c7e865-5fc4-40a1-8c82-1c3276c231bd)
+
 ## Styles:
 For the development, preprocessors such as SASS were used to stylize components.
 ## Global Status:
