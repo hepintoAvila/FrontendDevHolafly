@@ -120,6 +120,9 @@ without the need to manually pass properties.
 }
 ```
 ## Global Status:
+
+![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/5cbca5fe-854d-4aac-aaa0-770001db00da)
+
 To manage the global state of the application, a state management hook was implemented. This allows data to be shared between components 
 <sub> Hoock Developed</sub>
 To provide state and a life cycle for developed components.
