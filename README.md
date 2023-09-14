@@ -92,6 +92,9 @@ Each component was wrapped in a fallback: to obtain an alternative interface to 
 
 
 ## Styles:
+
+![image](https://github.com/hepintoAvila/FrontendDevHolafly/assets/142340366/c882721c-9746-42e0-b0c0-7439a8482145)
+
 For the development, preprocessors such as SASS were used to stylize components.
 without the need to manually pass properties.
 ```
