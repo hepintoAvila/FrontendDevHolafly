@@ -56,7 +56,12 @@ Also, a file was deployed to Docker and Docker compose was run to make the appli
 Finally, Unit tests were performed to verify the implementation.The tests could not be executed due to the low capacity of my PC.
 
 
+REFERENCES
 
+https://web.dev/color-and-contrast-accessibility/?utm_source=devtools
+https://nodejs.org/en/download
+https://docs.docker.com/get-docker/
+https://expressjs.com/en/starter/installing.html
 
 
 
