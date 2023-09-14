@@ -54,6 +54,29 @@ import { useKittens, useSlides } from './hoock/';
 For the development, preprocessors such as SASS were used to stylize components.
 ## Global Status:
 To manage the global state of the application, a state management hook was implemented. This allows data to be shared between components without the need to manually pass properties.
+```
+@media (max-width: 767px) {
+
+    /* Estilos para pantallas pequeñas */
+    .mensaje {
+        font-size: calc(1.25rem);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 8fr);
+        grid-template-rows: repeat(1, 286px);
+        gap: 2px;
+    }
+
+    .imgCat {
+        object-fit: cover;
+        padding: 0.1em;
+        height: 17em;
+        width: 24em;
+    }
+}
+```
+
 Finally, the application resulted in the following images for each of the screens:
 
 ### FOR TABLES
