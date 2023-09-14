@@ -15,7 +15,7 @@ If you're feeling extra ambitious:
 -   Dockerize the app
 -   Write realistic unit/end-to-end tests to make sure everything is working properly.
 
-######   **** ###
+######  INDICACIONES  ###
 These are the instructions to run the repo you must have a version of node.js >14 installed on your system.
 1. Clone this repository.
 2. Install the external libraries using npm install and run the server using npm run start.
